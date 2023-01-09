@@ -1,0 +1,22 @@
+{
+    "name": "Super StudentVUE",
+    "description": "Allows you to calculate grades with hypothetical grade changes.",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "128x128_logo.png"
+    },
+    "content_scripts": [
+        {
+          "js": ["scripts/content_v2.js"],
+          "matches": ["https://md-mcps-psv.edupoint.com/PXP2_Gradebook.aspx*"]
+        }
+    ],
+    "icons": {
+      "16": "16x16_logo.png",
+      "32": "32x32_logo.png",
+      "48": "48x48_logo.png",
+      "128": "128x128_logo.png"
+    }
+}
